@@ -5,12 +5,12 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <bean id="actorBean" class="com.stackroute.domain.Actor">
-    <property name="gender" value="Male"></property>
-    <property name="name" value="cooper"></property>
-    <property name="age" value="42"></property>
+    <constructor-arg name="gender" value="Male"></constructor-arg>
+    <constructor-arg name="name" value="cooper"></constructor-arg>
+    <constructor-arg name="age" value="42"></constructor-arg>
 </bean>
-    <bean id="movieBean" class="com.stackroute.domain.Movie">
-    <property name="actorObj" ref="actorBean" />
+    <bean name="movieBean,movieBean1" class="com.stackroute.domain.Movie" scope="prototype">
+    <constructor-arg name="actorObj" ref="actorBean" />
 
     </bean>
 
