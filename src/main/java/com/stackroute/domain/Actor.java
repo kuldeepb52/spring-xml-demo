@@ -14,4 +14,5 @@ public class Actor {
     public void getDetails(){
         System.out.println(name+" "+ age+" "+gender );
     }
+
 }

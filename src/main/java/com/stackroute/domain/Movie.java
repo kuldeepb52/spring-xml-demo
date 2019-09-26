@@ -1,12 +1,18 @@
 package com.stackroute.domain;
 
 public class Movie {
-    private Actor actorObj;
-    public Movie(Actor actorObj) {
-        this.actorObj = actorObj;
+    private Actor actorBean;
+
+    public Movie(Actor actorBean) {
+        this.actorBean = actorBean;
     }
 
+
+
+
     public void getActorDetails(){
-         actorObj.getDetails();
+         actorBean.getDetails();
     }
+
+
 }
